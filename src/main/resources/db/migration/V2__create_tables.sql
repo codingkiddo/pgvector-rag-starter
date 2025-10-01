@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS doc_chunks (
   chunk_id     INT  NOT NULL,
   content      TEXT NOT NULL,
   metadata     JSONB DEFAULT '{}'::jsonb,
-  embedding    vector(1536) NOT NULL,
+  embedding    vector(768) NOT NULL,
   created_at   TIMESTAMPTZ DEFAULT now()
 );
 CREATE INDEX IF NOT EXISTS idx_doc_chunks_collection ON doc_chunks(collection);
