@@ -1,0 +1,1 @@
+PGVector stores high-dimensional vectors in Postgres and lets you query by similarity using operators like <->.
